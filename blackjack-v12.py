@@ -81,7 +81,7 @@ def game():
 
         # Check for blackjack
         if calculate_value(player_hand) == 21:
-            winnings = int(bet * 1.5)
+            winnings = int(bet * 2.5)
             print(f"Blackjack! You win ${winnings}!")
             bankroll += winnings
             streak += 1
