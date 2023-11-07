@@ -50,7 +50,7 @@ def start_game(deck, drawn_cards):
 
 # Main game loop
 def game():
-    bankroll = 1000  # Initial bankroll
+    bankroll = int(input("Deposit: "))  # Initial bankroll
     streak = 0  # Initialize the winning streak counter
     max_streak = 0  # Initialize the maximum winning streak counter
     drawn_cards = []  # Keep track of drawn cards
@@ -61,7 +61,7 @@ def game():
         
         bet_input = input(f"Current bankroll: ${bankroll}. Enter your bet (type 'exit' to quit): ")
         
-        if bet_input.lower() == 'exit' or bet_input.lower() == 'quit' or bet_input.lower() == 'q':
+        if bet_input.lower() in ['exit', 'quit', 'q']:
             break
         
         try:
